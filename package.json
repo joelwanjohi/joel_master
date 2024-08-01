@@ -1,0 +1,36 @@
+{
+  "name": "joel_master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "run-p type-check build-only",
+    "preview": "vite preview",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --noEmit",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "format": "prettier --write src/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@primevue/core": "^4.0.3",
+    "pinia": "^2.2.0",
+    "primeicons": "^7.0.0",
+    "primevue": "^4.0.3",
+    "typescript": "^5.5.4",
+    "vue": "^3.4.35",
+    "vue-gtag": "^2.0.1",
+    "vue-router": "^4.4.2"
+  },
+  "devDependencies": {
+    "@types/vue-router": "^2.0.0",
+    "@vitejs/plugin-vue": "^5.1.1",
+    "@vitejs/plugin-vue-jsx": "^4.0.0",
+    "@vue/cli-service": "^5.0.8",
+    "@vue/tsconfig": "^0.5.1",
+    "vite": "^5.3.5"
+  }
+}
