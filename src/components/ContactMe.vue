@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import IconDown from '@/icons/IconDown.vue';
 import IconEmail from '@/icons/IconEmail.vue';
+import IconLinkedin from '@/icons/IconLinkedin.vue';
 import IconTelegram from '@/icons/IconTelegram.vue';
 import { useSidebarStore } from '@/stores/sidebar';
 import Menu from 'primevue/menu';
@@ -8,17 +9,17 @@ import { ref } from 'vue';
 
 const { color, icon } = defineProps(['color', 'icon']);
 const hrefs: any = {
-  Email: 'mailto:contact@obum.me',
-  Telegram: 'https://t.me/obumnwabude',
+  Email: 'mailto:joepeterwanjohi207@gmail.com',
+  Linkedin: 'https://linkedin.com/in/joel-wanjohi-billa59262',
 };
 const icons: any = {
   Email: IconEmail,
-  Telegram: IconTelegram,
+  Linkedin: IconLinkedin,
 };
 const sidebar = useSidebarStore();
 const items = ref([
   { label: 'Email', command: sidebar.close },
-  { label: 'Telegram', command: sidebar.close },
+  { label: 'Linkedin', command: sidebar.close },
 ]);
 const menu = ref();
 </script>
@@ -33,7 +34,7 @@ const menu = ref();
     outlined
   >
     <IconDown v-if="icon" />
-    Contact Me
+    Say Hi
     <Menu
       ref="menu"
       id="contact-menu"
@@ -67,6 +68,7 @@ button {
   color: var(--text);
   display: flex;
   font-weight: 500;
+  font-family: "Lucida Handwriting", cursive;
   padding: 0.625rem 3rem;
 }
 

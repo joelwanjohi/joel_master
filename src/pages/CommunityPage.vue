@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<!-- <script setup lang="ts">
 import Project from '@/components/Project.vue';
 import { community } from '@/content/community';
 </script>
@@ -94,4 +94,4 @@ import { community } from '@/content/community';
   <div page-content>
     <Project :project="contribution" v-for="contribution of community" />
   </div>
-</template>
+</template> -->

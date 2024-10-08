@@ -1,7 +1,7 @@
 import HomePage from '@/pages/HomePage.vue';
 import { createRouter, createWebHistory } from 'vue-router';
 
-const baseTitle = 'Obum (Obumuneme Nwabude)';
+const baseTitle = 'JW (Joel Wanjohi)';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -25,10 +25,10 @@ const router = createRouter({
       meta: { title: `Articles | ${baseTitle}` },
     },
     {
-      path: '/community',
-      name: 'community',
+      path: '/resume',
+      name: 'resume',
       component: () => import('@/pages/CommunityPage.vue'),
-      meta: { title: `Community | ${baseTitle}` },
+      meta: { title: `Resume | ${baseTitle}` },
     },
     {
       path: '/:catchAll(.*)',

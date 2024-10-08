@@ -3,31 +3,32 @@ import Article from '@/components/Article.vue';
 import ContactMe from '@/components/ContactMe.vue';
 import Project from '@/components/Project.vue';
 import { articles } from '@/content/articles';
-import { community } from '@/content/community';
+// import { community } from '@/content/community';
 import { projects } from '@/content/projects';
 import IconFlower2P from '@/icons/IconFlower2P.vue';
 import IconFlower6P from '@/icons/IconFlower6P.vue';
 import { banners } from '@/types';
 
-const years = new Date().getFullYear() - 2018;
+const years = new Date().getFullYear() - 2021;
 </script>
 
 <template>
   <div intro>
     <div>
       <IconFlower2P />
+      <br>
       <h2>JOEL WANJOHI</h2>
-      <h3>Full-Stack Blockchain, Mobile, and Web Developer.</h3>
+      <h3>Full-Stack Mobile, Web, and Desktop App Developer, ensuring all applications look beautiful.</h3>
       <p>
-        I have been programming for {{ years }} years and counting. I've worked
-        with great teams and have built one-of-a-kind solutions. I'm a pro in
-        Flutter, everything web dev, and also in web3 (Solana & Solidity). I am also a Google Developer Expert (GDE) in the Dart & Flutter categories.
+        Passionate about building robust, beautiful and clean experiences for my users. I look at languages
+        frameworks as just tools that help bring an idea to life, I'm a pro in
+        Flutter, everything app / web dev, and also in web3. 
       </p>
       <p contact><ContactMe color="var(--primary)" /></p>
     </div>
     <div>
       <div gray></div>
-      <img src="/assets/obum.jpg" />
+      <img src="/assets/joe.jpg" />
     </div>
   </div>
 
@@ -45,7 +46,7 @@ const years = new Date().getFullYear() - 2018;
     <h2>LATEST PROJECTS</h2>
     <Project :project="project" v-for="project of projects.slice(0, 3)" />
     <div more>
-      <span flower><IconFlower6P color="var(--primary)" /></span>
+      <span flower><IconFlower2P color="var(--primary)" /></span>
       <p>Of Course, There Are More.</p>
       <router-link to="/projects" outlined>... All Projects</router-link>
     </div>
@@ -55,13 +56,13 @@ const years = new Date().getFullYear() - 2018;
     <h2>LATEST ARTICLES</h2>
     <Article :article="article" v-for="article of articles.slice(0, 3)" />
     <div more>
-      <span flower><IconFlower6P color="var(--primary)" /></span>
+      <span flower><IconFlower2P color="var(--primary)" /></span>
       <p>Of Course, There Are More.</p>
       <router-link to="/articles" outlined>... All Articles</router-link>
     </div>
   </section>
 
-  <section>
+  <!-- <section>
     <h2>COMMUNITY</h2>
     <Project
       :project="contribution"
@@ -72,14 +73,14 @@ const years = new Date().getFullYear() - 2018;
       <p>Of Course, There Are More.</p>
       <router-link to="/community" outlined>... All Events</router-link>
     </div>
-  </section>
+  </section> -->
 
   <div closing>
-    <span leading-flower><IconFlower6P color="var(--primary)" /></span>
+    <span leading-flower><IconFlower2P color="var(--primary)" /></span>
     <h2>LET'S WORK TOGETHER</h2>
     <p text>
-      "Coming together is a beginning. Keeping together is progress. Working
-      together is success." ~ Henry Ford.
+      "Many ideas grow better when transplanted into another mind 
+      than the one where they sprang up." ~ Oliver Wendell Holmes.
       <br />
       Let's work together to achieve success.
     </p>

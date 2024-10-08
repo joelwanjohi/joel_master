@@ -9,11 +9,11 @@ const year = new Date().getFullYear();
 <template>
   <footer>
     <div top>
-      <p><router-link to="/" obum>Obum</router-link></p>
+      <p><router-link to="/" joel>Joel</router-link></p>
       <nav>
         <ul>
           <li><router-link to="/">About Me</router-link></li>
-          <li v-for="link of ['projects', 'articles', 'community']">
+          <li v-for="link of ['projects', 'articles', 'resume']">
             <router-link :to="`/${link}`">{{ capitalize(link) }}</router-link>
           </li>
         </ul>
@@ -22,7 +22,7 @@ const year = new Date().getFullYear();
     </div>
     <div bottom>
       <SocialIcons />
-      <p>All Rights Reserved &copy; {{ year }} Obumuneme Nwabude</p>
+      <p>All Rights Reserved &copy; {{ year }} Joel Wanjohi</p>
     </div>
   </footer>
 </template>
@@ -37,13 +37,13 @@ footer {
   margin-bottom: 2rem;
 }
 
-[obum] {
+[joel] {
   font-size: 2rem;
   font-weight: bold;
 }
 
 @media (max-width: 767.98px) {
-  [obum] {
+  [joel] {
     display: inline-block;
     margin-bottom: 1rem;
   }

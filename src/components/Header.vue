@@ -10,11 +10,11 @@ const sidebar = useSidebarStore();
 
 <template>
   <header>
-    <h1><router-link to="/" obum>Obum</router-link></h1>
+    <h1><router-link to="/" >JW</router-link></h1>
     <nav>
       <ul>
         <li><router-link to="/">About Me</router-link></li>
-        <li v-for="link of ['projects', 'articles', 'community']">
+        <li v-for="link of ['projects', 'articles', 'resume']">
           <router-link :to="`/${link}`">{{ capitalize(link) }}</router-link>
         </li>
       </ul>
@@ -49,7 +49,7 @@ h1 {
   line-height: 1;
 }
 
-[obum] {
+[joel] {
   font-weight: bold;
 }
 
@@ -65,7 +65,7 @@ ul li:not(:last-of-type) {
   margin-right: 1.5rem;
 }
 
-.router-link-active:not([obum])::after {
+.router-link-active:not([joel])::after {
   background-color: var(--primary);
   content: ' ';
   display: block;
